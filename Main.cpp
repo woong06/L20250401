@@ -4,21 +4,31 @@ using namespace std;
 
 int main()
 {
-	int Number1 = 20;
-	int Number2 = 2;
+	int Map[10][10] =
+	{
+		{ 1, 1, 1, 1, 1, 1, 1, 1, 1, 1},
+		{ 1, 0, 0, 0, 0, 0, 0, 0, 0, 1},
+		{ 1, 0, 0, 0, 0, 0, 0, 0, 0, 1},
+		{ 1, 0, 0, 0, 0, 0, 0, 0, 0, 1},
+		{ 1, 0, 0, 0, 0, 0, 0, 0, 0, 1},
+		{ 1, 0, 0, 0, 0, 0, 0, 0, 0, 1},
+		{ 1, 0, 0, 0, 0, 0, 0, 0, 0, 1},
+		{ 1, 0, 0, 0, 0, 0, 0, 0, 0, 1},
+		{ 1, 0, 0, 0, 0, 0, 0, 0, 0, 1},
+		{ 1, 1, 1, 1, 1, 1, 1, 1, 1, 1}
+	};
 
-	cout << (Number1 + Number2) << endl;
-	cout << (Number1 - Number2) << endl;
-	cout << (Number1 * Number2) << endl;
-	cout << (Number1 / Number2) << endl;
-
-	float Number3 = 10.5f;
-	float Number4 = 2.0f;
-
-	cout << (Number3 + Number4) << endl;
-	cout << (Number3 - Number4) << endl;
-	cout << (Number3 * Number4) << endl;
-	cout << (Number3 / Number4) << endl;
+	for (int y = 0; y < 10; y++)
+	{
+		for (int x = 0; x < 10; x++)
+		{
+			if (Map[y][x] == 1)
+				cout << "бс";
+			else
+				cout << "бр";
+		}
+		cout << endl;
+	}
 
 	return 0;
 }
